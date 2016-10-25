@@ -3,15 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Седона</title>
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
 			<header class="main-header">
 					<div class="logo">
-						<img src="http://placehold.it/75x75">
+						<a href=""><img src="img/logo.png" alt="Седона"></a>
 					</div>
 					<nav class="main-nav">
-						<ul class="nav-list">
+						<ul class="main-nav-list">
 							<li>
 								<a href="#">Информация</a>
 							</li>
@@ -27,78 +28,80 @@
 						</ul>
 					</nav>
 				<div class="header-intro">
-					<img src="#" width="100%" height="auto">
+					<img class="intro-photo" src="#" width="100%" height="auto" alt="Природа Седоны">
+					<img class="intro-text" src="img/main/intro-text.png">
 				</div>
 			</header>
 			<main>
 				<div class="main-content">
 					<h1 class="index-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-					<p class="title-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+					<p class="reason-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 				</div>
 				<div class="reason-list">
 					<div class="reason-row">
 						<div class="reason-item">
-							<b class="reason-title">Настоящий городок</b>
+							<b class="title">Настоящий городок</b>
 							<span class="reason-number">№1</span>
-							<p class="title-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+							<p class="reason-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
 						</div>
-						<div class="reason-item-photo">
-							<img src="http://placehold.it/800x255" alt="Настоящий городок Седона" width="66%" height="auto">
+						<div class="reason-photo">
+							<img src="img/main/real-city.png" width="800" height="255" alt="Настоящий городок Седона">
 						</div>
 					</div>
 					<div class="reason-row">
 						<div class="reason-item">
-							<b class="reason-title">Жилье</b>
-							<p class="title-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+							<b class="title">Жилье</b>
+							<p class="reason-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 						</div>
 						<div class="reason-item">
-							<b class="reason-title">Еда</b>
-							<p class="title-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+							<b class="title">Еда</b>
+							<p class="reason-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 						</div>
 						<div class="reason-item">
-							<b class="reason-title">Сувениры</b>
-							<p class="title-description">Не только китайского, но и местного производства!</p>
+							<b class="title">Сувениры</b>
+							<p class="reason-description">Не только китайского, но и местного производства!</p>
 						</div>
 					</div>
 					<div class="reason-row">
 						<div class="reason-list-item">
-							<b class="reason-title">Там есть мост Дьявола</b>
+							<b class="title">Там есть мост Дьявола</b>
 							<span class="reason-number">№2</span>
-							<p class="title-description">Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+							<p class="reason-description">Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
 						</div>
-						<div class="reason-item-photo">
-							<img src="http://placehold.it/800x255" alt="Мост Дьявола" width="66%" height="auto">
+						<div class="reason-photo">
+							<img src="img/main/devils-bridge.png" width="800" height="255" alt="Мост Дьявола">
 						</div>
 					<div class="reason-row">
 						<div class="reason-list-item">
-							<b class="reason-title">Небольшая площадь</b>
+							<b class="title">Небольшая площадь</b>
 							<span class="reason-number">№3</span>
-							<p class="title-description">Все достопримечательности находятся очень близко</p>
+							<p class="reason-description">Все достопримечательности находятся очень близко</p>
 						</div>
 						<div class="reason-list-item">
-							<b class="reason-title">Красивая дорога</b>
+							<b class="title">Красивая дорога</b>
 							<span class="reason-number">№4</span>
-							<p class="title-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+							<p class="reason-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 						</div>
 						<div class="reason-list-item">
-							<b class="reason-title">Мало туристов</b>
+							<b class="title">Мало туристов</b>
 							<span class="reason-number">№5</span>
-							<p class="title-description">Большинство идет в Гранд Каньон и толпится там</p>
+							<p class="reason-description">Большинство идет в Гранд Каньон и толпится там</p>
 					</div>
 				</div>
 					<div>
-						<strong>Заинтересовались?</strong>
-						<p class="title-description">
+						<p class="reason-description">
+							<strong>Заинтересовались?</strong>
 							Укажите предполагаемые даты поездки,<br>
 							и мы покажем вам лучшие предложения гостиниц в седоне
 						</p>
-						<button class="btn"><a href="#">Поиск гостиницы в Седоне</a></button>
+						<a class="btn" href="#">Поиск гостиницы в Седоне</a>
 					</div>	
 				<div class="map">
+					<img src="img/main/map.png" width="1200" height="475" alt="Карта">
 				</div>
 			</main>
 			<footer class="main-footer">
-				<div class="hashtag-visit-sedona">
+				<div class="hashtag">
 					<a href="#">#Visitsedona</a>
 				</div>
 				<div class="social">
@@ -109,27 +112,33 @@
 				<div class="copyright">
 					<p>
 						Website by
-						<a href="#"><img src="http://placehold.it/100x50"></a>
+						<a href="#">
+							<img src="img/copyright-icon.png" width="115" height="40" alt="HTML Academy">
+						</a>
 					</p>
 				</div>
 			</footer>
 		</div>
-			<div class="booking">
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<label>Дата заезда:
-						<input type="text" name="arrival-date" placeholder="24 Апреля 2016">
-					</label>
-					<label>Дата выезда:
-						<input type="text" name="departure-date" placeholder="4 июля 2016">
-					</label>
-					<label>Взрослые:
-						<input type="number" name="number-of-adults" placeholder="2">
-					</label>
-					<label>Дети:
-						<input type="number" name="number-of-children" placeholder="0">
-					</label>
-					<button class="btn" type="submit">Найти</button>
-				</form>	
-			</div>
+		<div class="modal">
+			<form class="booking" action="https://echo.htmlacademy.ru" method="post">
+				<label>
+					Дата заезда:
+					<input type="text" name="arrival-date" placeholder="24 Апреля 2016">
+				</label>
+				<label>
+					Дата выезда:
+					<input type="text" name="departure-date" placeholder="4 июля 2016">
+				</label>
+				<label>
+					Взрослые:
+					<input type="number" name="number-of-adults" placeholder="2">
+				</label>
+				<label>
+					Дети:
+					<input type="number" name="number-of-children" placeholder="0">
+				</label>
+				<button class="btn" type="submit">Найти</button>
+			</form>	
+		</div>
 	</body>
 </html>

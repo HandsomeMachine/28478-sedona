@@ -17,6 +17,12 @@ a {
 	color: #000000;
 }
 
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 .container {
 	width: 1200px;
 	margin-top: -10px;
@@ -63,6 +69,10 @@ a {
 
 .header-intro {
 	margin-bottom: 60px;
+}
+
+.main-header .header-intro {
+	background: url("../img/main/intro-photo.jpg") no-repeat;
 }
 
 .intro-text {

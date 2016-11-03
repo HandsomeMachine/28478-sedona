@@ -31,7 +31,9 @@
 						</nav>
 					</div>
 			</header>
-			<main class="container">
+		</div>	
+		<div class="container">	
+			<main>
 				<div class="hotel-search-form clearfix">
 					<form action="https://echo.htmlacademy.ru" method="get">
 						<fieldset class="filter left-column">
@@ -40,21 +42,22 @@
 								<li>
 									<label>
 										Бассейн
-										<input type="checkbox" name="infrastructure" value="pool" checked>
+										<input type="checkbox" name="pool" value="infrastructure" checked>
 									</label>
 								</li>
 								<li>
 									<label>
 										Парковка
-										<input type="checkbox" name="infrastructure" value="parking">
+										<input type="checkbox" name="parking" value="infrastructure">
 									</label>
 								</li>
 								<li>
 									<label>
 										Wi-Fi
-										<input type="checkbox" name="infrastructure" value="wi-fi">
+										<input type="checkbox" name="wi-fi" value="infrastructure">
 									</label>
 								</li>
+							</ul>	
 						</fieldset>
 						<fieldset class="filter left-column">
 							<legend>Тип жилья:</legend>
@@ -62,19 +65,19 @@
 								<li>
 									<label>
 										Гостиница
-										<input type="checkbox" name="property-type" value="hotel" checked>
+										<input type="checkbox" name="hotel" value="property-type" checked>
 									</label>
 								</li>
 								<li>
 									<label>
 										Мотель
-										<input type="checkbox" name="property-type" value="motel" checked>
+										<input type="checkbox" name="motel" value="property-type" checked>
 									</label>
 								</li>
 								<li>
 									<label>
 										Апартаменты
-										<input type="checkbox" name="property-type" value="apartments" checked>
+										<input type="checkbox" name="apartments" value="property-type" checked>
 									</label>
 								</li>
 							</ul>	
@@ -99,8 +102,8 @@
 					<div class="sort clearfix">
 						<p class="sort-number">Найдено: <span>3</span></p>
 						<div class="sort-list">
-							<span class="sort-option">Сортировка:</span>
 							<div class="sort-type">
+								<span class="sort-option">Сортировка:</span>
 								<a href="#">По цене</a>
 								<a href="#">По типу</a>
 								<a href="#">По рейтингу</a>
@@ -111,7 +114,7 @@
 							</div>
 						</div>	
 					</div>
-					<div class="sort-result clearfix">
+					<div class="sort-result">
 						<div class="hotel-item clearfix">
 							<div class="hotel-photo">
 								<img src="img/hotels/amara-resort-spa.jpg" width="135" height="89" alt="Amara Resort &amp; SPA">
@@ -174,15 +177,17 @@
 					<a href="#">#Visitsedona</a>
 				</div>
 				<div class="social">
-					<a href="#">Twitter</a>
-					<a href="#">Facebook</a>
-					<a href="#">Youtube</a>
+					<a class="social twitter" href="#">Twitter</a>
+					<a class="social facebook" href="#">Facebook</a>
+					<a class="social youtube" href="#">Youtube</a>
 				</div>
 				<div class="copyright">
 					<p>
 						Website by
-						<a href="#"><img src="img/copyright-icon.png" width="115" height="40" alt="HTML Academy"></a>
 					</p>
+					<a href="#">
+						<img src="img/copyright-icon.png" width="115" height="40" alt="HTML Academy">
+					</a>
 				</div>
 			</footer>
 		</div>

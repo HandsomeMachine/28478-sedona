@@ -42,17 +42,13 @@
 				</div>
 				<div class="index-content">
 					<div class="reason-row clearfix">
-						<div class="reason-item best-reason index-left-column">
-							<div class="reason-text">
-								<h2>Настоящий<br> городок</h2>
-								<span class="reason-number">№ 1</span>
-								<p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
-							</div>
+						<div class="reason-text reason-best index-left-column">
+							<h2>Настоящий<br> городок</h2>
+							<span class="reason-number">&mdash; №1 &mdash;</span>
+							<p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
 						</div>
-						<div class="reason-item index-right-column">
-							<div class="reason-photo">
-								<img src="img/main/real-city.jpg" width="800" height="256" alt="Настоящий городок Седона">
-							</div>
+						<div class="reason-photo index-right-column">
+							<img src="img/main/real-city.jpg" width="800" height="256" alt="Настоящий городок Седона">
 						</div>
 					</div>
 					<div class="features">
@@ -73,40 +69,30 @@
 						</div>
 					</div>
 					<div class="reason-row">
-						<div class="reason-item">
-							<div class="reason-photo index-left-column">
-								<img src="img/main/devils-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
-							</div>
+						<div class="reason-photo index-left-column">
+							<img src="img/main/devils-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
 						</div>
-						<div class="reason-item best-reason index-right-column">
-							<div class="reason-text">
-								<h2>Там есть<br> Мост Дьявола</h2>
-								<span class="reason-number">№ 2</span>
-								<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-							</div>
+						<div class="reason-text reason-best index-right-column">
+							<h2>Там есть<br> Мост Дьявола</h2>
+							<span class="reason-number">&mdash; №2 &mdash;</span>
+							<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 						</div>
 					</div>
 					<div class="reason-row clearfix">
-						<div class="reason-item index-left-column">
-							<div class="reason-text">
-								<h2>Небольшая<br> площадь</h2>
-								<span class="reason-number">№ 3</span>
-								<p>Все достопримечательности находятся очень близко</p>
-							</div>
+						<div class="reason-text index-left-column">
+							<h2>Небольшая<br> площадь</h2>
+							<span class="reason-number">&mdash; №3 &mdash;</span>
+							<p>Все достопримечательности находятся очень близко</p>
 						</div>	
-						<div class="reason-item index-center-column">
-							<div class="reason-text">
-								<h2>Красивая<br> дорога</h2>
-								<span class="reason-number">№ 4</span>
-								<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-							</div>
+						<div class="reason-text index-center-column">
+							<h2>Красивая<br> дорога</h2>
+							<span class="reason-number">&mdash; №4 &mdash;</span>
+							<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 						</div>	
-						<div class="reason-item index-right-column">
-							<div class="reason-text">
-								<h2>Мало<br> туристов</h2>
-								<span class="reason-number">№ 5</span>
-								<p>Большинство едет в Гранд Каньон и толпится там</p>
-							</div>
+						<div class="reason-text index-right-column">
+							<h2>Мало<br> туристов</h2>
+							<span class="reason-number">&mdash; №5 &mdash;</span>
+							<p>Большинство едет в Гранд Каньон и толпится там</p>
 						</div>	
 					</div>
 				</div>
@@ -120,7 +106,7 @@
 				<div class="index-map">
 				</div>
 			</main>
-			<footer class="main-footer clearfix">
+			<footer class="main-footer footer-transparent clearfix">
 				<a class="hashtag" href="#">#VisitSedona</a>
 				<div class="footer-social">
 					<a class="social-button social-button-tw" href="#">Twitter</a>
@@ -135,23 +121,25 @@
 				</div>
 			</footer>
 		</div>
-		<div class="modal-content"> <!--В случае отключенного JS, нужно добавить класс .modal-content-close для закрытия формы-->
+		<div class="modal-content"> <!--Чтобы скрыть эту форму, нужно добавить класс .modal-content-close-->
 			<form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
-				<div>
+				<div class="booking-date clearfix">
 					<label for="arrival-date">Дата заезда:</label>
-						<input class="booking-date" type="text" name="arrival-date" value="" id="arrival-date" placeholder="24 Апреля 2016">
+					<input type="text" name="arrival-date" value="" id="arrival-date" placeholder="24 АПРЕЛЯ 2016">
+					<div class="calendar-icon"></div>
 				</div>
-				<div>
+				<div class="booking-date clearfix">
 					<label for="departure-date">Дата Выезда:</label>
-						<input class="booking-date" type="text" name="departure-date" value="" id="departure-date" placeholder="4 июля 2016">
+					<input type="text" name="departure-date" value="" id="departure-date" placeholder="4 ИЮЛЯ 2016">
+					<div class="calendar-icon"></div>
 				</div>
-				<div>
+				<div class="booking-person adult-number">
 					<label for="adults-number">Взрослые:</label>
-						<input class="booking-person" type="text" name="adults-number" value="" id="adults-number" placeholder="2">
+					<input type="text" name="adults-number" value="" id="adults-number" placeholder="2">
 				</div>
-				<div>
+				<div class="booking-person children-number">
 					<label for="children-number">Дети:</label>
-						<input class="booking-person" type="text" name="children-number" value="" id="children-number" placeholder="0">
+					<input type="text" name="children-number" value="" id="children-number" placeholder="0">
 				</div>
 				<button class="hotel-search-btn" type="submit" title="Найти гостиницу">Найти</button>
 			</form>

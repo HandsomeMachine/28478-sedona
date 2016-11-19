@@ -2,7 +2,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
   text-transform: uppercase;
 
@@ -12,12 +12,11 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  max-height: auto;
 }
 
 .clearfix {
   content: "";
-
   display: table;
   clear: both;
 }
@@ -25,7 +24,6 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 1, 1, 0.2);
 }
@@ -39,14 +37,12 @@ img {
 
 .main-navigation {
   position: relative;
-
   padding: 0 72px;
 }
 
 .main-navigation ul {
   margin: 0;
   padding: 0;
-
   font-size: 0;
   list-style: none;
 }
@@ -55,7 +51,6 @@ img {
   display: inline-block;
   width: 240px;
   padding: 14px 0;
-
   vertical-align: top;
 }
 
@@ -65,7 +60,7 @@ img {
 }
 
 .main-navigation li:nth-child(2) {
-  margin-right: 96px;
+  margin-right: 94px;
 }
 
 .main-navigation li:nth-child(3),
@@ -90,8 +85,6 @@ img {
   top: 0;
   left: 530px;
   z-index: 10;
-
-  display: block;
   width: 138px;
   height: 70px;
 }
@@ -102,10 +95,8 @@ img {
 
 .index-intro {
   position: relative;
-
   width: 100%;
   height: 564px;
-  margin-bottom: 65px;
 
   background: #87b9d8 url("../img/main/intro-photo.jpg") no-repeat;
 }
@@ -119,8 +110,8 @@ img {
 .index-intro-title h1 {
   width: 500px;
   margin: 0 auto;
-  margin-bottom: 35px;
-
+  margin-top: 4px;
+  margin-bottom: 26px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -129,8 +120,7 @@ img {
 .index-intro-title p {
   width: 500px;
   margin: 0 auto;
-  margin-bottom: 55px;
-
+  margin-bottom: 50px;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
@@ -151,30 +141,27 @@ img {
 
 .reason-item {
   width: 400px;
-
   text-align: center;
 }
 
 .reason-text {
-  padding: 44px 60px;
+  padding: 38px 49px;
 }
 
 .reason-text h2 {
+  margin-bottom: 23px;
   font-size: 21px;
   line-height: 21px;
 }
 
-.reason-text p {
-  padding: 0 30px;
+.reason-number {
+  display: block;
+  margin-bottom: 21px;
 }
 
 .best-reason {
   color: #ffffff;
   background-color: #81b3d2;
-}
-
-.best-reason:nth-child(2) p {
-  padding: 0 15px;
 }
 
 .reason-photo {
@@ -183,7 +170,6 @@ img {
 
 .features-item {
   width: 400px;
-
   text-align: center;
 }
 
@@ -191,8 +177,8 @@ img {
   width: 75px;
   height: 75px;
   margin: 0 auto;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: 59px;
+  margin-bottom: 29px;
 }
 
 .house-icon {
@@ -211,54 +197,54 @@ img {
 }
 
 .features-item h2 {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .features-item p {
   margin-bottom: 75px;
-  padding: 0 80px;
+  padding: 0 55px;
+  padding-bottom: 5px;
+}
+
+.index-content .reason-row:last-child {
+  padding: 0;
 }
 
 .hotel-search-intro strong {
   display: block;
   width: 575px;
   margin: 0 auto;
-  margin-top: 55px;
-  margin-bottom: 35px;
-
+  margin-top: 57px;
+  margin-bottom: 31px;
   font-size: 30px;
   line-height: 24px;
   text-align: center;
 }
 
 .hotel-search-intro p {
-  width: 400px;
+  width: 440px;
   margin: 0 auto;
-  margin-bottom: 50px;
-
+  margin-bottom: 48px;
   line-height: 24px;
   text-align: center;
 }
 
 .search-form-btn {
   display: block;
-  width: 570px;
+  width: 568px;
   margin: 0 auto;
-  padding: 30px 0;
-
+  padding: 29px 0;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-
   background-color: #766357;
 }
 
 .index-map {
   width: 1200px;
   height: 475px;
-
   background: #eeeeee url("../img/main/map.jpg") no-repeat;
 }
 
@@ -272,9 +258,7 @@ img {
 .hotel-filter {
   width: 1200px;
   padding-top: 30px;
-
   color: #ffffff;
-
   background: url("../img/hotels/filter-background.jpg") no-repeat;
   background-size: 100% auto;
 }
@@ -285,7 +269,6 @@ img {
 
 .filter-block {
   display: inline-block;
-
   font-size: 0;
   vertical-align: top;
 }
@@ -299,14 +282,12 @@ img {
 .hotel-filter-form fieldset {
   margin: 0;
   padding: 0;
-
   font-size: 14px;
   border: none;
 }
 
 .hotel-filter-form legend {
   margin: 30px 0;
-
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -314,13 +295,11 @@ img {
 
 .hotel-filter-form label {
   position: relative;
-
   display: block;
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
   padding-left: 40px;
-
   cursor: pointer;
 }
 
@@ -332,10 +311,8 @@ img {
   position: absolute;
   top: -2px;
   left: 0;
-
   width: 21px;
   height: 21px;
-
   border-radius: 20%;
   border: 2px solid #ffffff;
 }
@@ -346,10 +323,8 @@ img {
   position: absolute;
   top: 9px;
   left: 3px;
-
   width: 15px;
   height: 2px;
-
   background-color: #ffffff;
 }
 
@@ -368,7 +343,6 @@ img {
 
 .cost-range-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -376,12 +350,9 @@ img {
 
 .price-controls {
   position: relative;
-
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -391,16 +362,13 @@ img {
   position: absolute;
   top: 7px;
   left: 150px;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
 }
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -415,40 +383,33 @@ img {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -472,12 +433,10 @@ img {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -486,7 +445,6 @@ img {
 
 .filter-form-btn:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
@@ -507,32 +465,29 @@ img {
   width: 138px;
   margin: 0;
   margin-right: 30px;
-
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
+.sort-choice span {
+  float: left;
+  margin-right: 40px;
+}
+
 .sort-type {
   float: left;
   margin-top: 5px;
-
   font-size: 12px;
   line-height: 18px;
-}
-
-.sort-type span {
-  margin-right: 40px;
 }
 
 .sort-choice a {
   display: inline-block;
   margin-right: 33px;
-
   color: #b1b1b1;
   text-align: center;
   text-decoration: none;
-
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -555,9 +510,7 @@ img {
 
 .sort-arrows a {
   display: inline-block;
-
   margin: 0 5px;
-
   font-size: 0;
   vertical-align: top;
   border: none;
@@ -566,7 +519,6 @@ img {
 .arrow::before {
   content: "";
   display: inline-block;
-
   border: 20px solid #eeeeee;
   border-right-width: 10px;
   border-left-width: 10px;
@@ -584,10 +536,8 @@ img {
 
 .sort-result-row {
   display: inline-block;
-
   width: 1056px;
   padding: 30px 0;
-
   vertical-align: top;
 }
 
@@ -612,14 +562,12 @@ img {
 .hotel-description .hotel-title {
   margin-top: -5px;
   margin-bottom: 10px;
-
   line-height: 26px;
 }
 
 .hotel-description .hotel-type {
   float: left;
   display: block;
-  
   margin-right: 39px;
   margin-bottom: 10px;
 }
@@ -636,11 +584,9 @@ img {
   width: 74px;
   padding: 4px 17px;
   margin-right: 5px;
-
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-
   background-color: #81b3d2;
 }
 
@@ -653,11 +599,9 @@ img {
   float: left;
   width: 106px;
   padding: 4px 17px;
-
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-
   background-color: #766357;
 }
 
@@ -666,23 +610,16 @@ img {
 }
 
 .hotel-rate-star {
-  display: block;
-  float: right;
   width: 89px;
   min-height: 17px;
   margin-bottom: 47px;
-
   background: url("..img/hotels/star-icon.png") no-repeat;
 }
 
 .hotel-rate-number {
-  display: block;
-  float: right;
   width: 80px;
   padding: 3px 15px;
-
   text-align: center;
-
   background-color: #f2f2f2;
 }
 
@@ -692,15 +629,13 @@ img {
 
 .main-footer {
   text-align: center;
-
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer .hashtag {
   float: left;
   width: 400px;
-  padding: 47px 0;
-
+  padding: 46px 0;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -715,15 +650,14 @@ img {
 .footer-social {
   float: left;
   width: 400px;
-  padding: 36px 0;
+  padding: 35px 0;
 }
 
 .social-button {
   display: inline-block;
   width: 46px;
   height: 48px;
-  margin-right: 6px;
-
+  margin-right: 4px;
   font-size: 0;
   text-decoration: none;
   vertical-align: top;
@@ -745,7 +679,6 @@ img {
   float: left;
   width: 75px;
   padding-left: 102px;
-
   line-height: 26px;
 }
 
@@ -761,13 +694,15 @@ img {
 
 .modal-content {
   position: absolute;
-  top: 2253px;
-  left: 390px;
-
-  width: 570px;
-
+  top: 2170px;
+  left: 391px;
+  width: 568px;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 1, 1, 0.2);
+}
+
+.modal-content-close {
+  display: none;
 }
 
 .hotel-search-form {
@@ -779,7 +714,6 @@ img {
   width: 114px;
   margin: 0;
   padding: 6px 0;
-
   font-weight: bold;
   line-height: 26px;
   color: #000000;
@@ -789,24 +723,21 @@ img {
 
 .hotel-search-form input {
   float: left;
-
   margin: 0;
   margin-bottom: 30px;
-
   font-weight: bold;
   font-size: inherit;
   line-height: 26px;
   font-family: inherit;
   color: #000000;
   text-transform: uppercase;
-
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
 }
 
 .booking-date {
-  width: 300px;
+  width: 298px;
   padding: 6px 15px;
   padding-right: 30px;
 }
@@ -814,20 +745,18 @@ img {
 .booking-person {
   width: 38px;
   padding: 6px 15px;
-
   text-align: center;
 }
 
 .hotel-search-btn {
   width: 460px;
   padding: 16px 0;
-
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  font-family: inherit;
   color: #ffffff;
   text-transform: uppercase;
-
   border: none;
   background-color: #81b3d2;
   cursor: pointer;

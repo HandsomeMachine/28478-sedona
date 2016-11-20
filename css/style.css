@@ -841,9 +841,10 @@ img {
 
 .modal-content {
 	position: absolute;
-	top: 2168px;
-	left: 391px;
+	left: 50%;
+	bottom: -1930px;
 	width: 568px;
+	margin-left: -284px;
 	background-color: #ffffff;
 	box-shadow: 0 0 10px rgba(0, 1, 1, 0.2);
 }
@@ -882,22 +883,22 @@ img {
 	cursor: pointer;
 }
 
-.hotel-search-form::-webkit-input-placeholder {
+.booking-date::-webkit-input-placeholder {
 	color: #000000;
 	opacity: 1;
 }
 
-.hotel-search-form::-moz-placeholder {
+.booking-date::-moz-placeholder {
 	color: #000000;
 	opacity: 1;
 }
 
-.hotel-search-form:-ms-input-placeholder {
+.booking-date:-ms-input-placeholder {
 	color: #000000;
 	opacity: 1;
 }
 
-.hotel-search-form::placeholder {
+.booking-date::placeholder {
 	color: #000000;
 	opacity: 1;
 }
@@ -946,7 +947,6 @@ img {
 
 .booking-person input {
 	width: 38px;
-	margin-left: 36px;
 	text-align: center;
 }
 

@@ -136,7 +136,6 @@ img {
 }
 
 .index-intro-title p {
-	width: 500px;
 	margin: 0 auto;
 	margin-bottom: 51px;
 	font-size: 14px;
@@ -238,6 +237,10 @@ img {
 	padding-bottom: 5px;
 }
 
+.hotel-search {
+	position: relative;
+}
+
 .hotel-search-intro strong {
 	display: block;
 	width: 575px;
@@ -251,7 +254,6 @@ img {
 }
 
 .hotel-search-intro p {
-	width: 440px;
 	margin: 0 auto;
 	margin-bottom: 48px;
 	line-height: 24px;
@@ -381,11 +383,13 @@ img {
 }
 
 .filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 }
 
 .filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 .cost-range {
@@ -842,7 +846,7 @@ img {
 .modal-content {
 	position: absolute;
 	left: 50%;
-	bottom: -1930px;
+	bottom: -395px;
 	width: 568px;
 	margin-left: -284px;
 	background-color: #ffffff;
@@ -883,22 +887,22 @@ img {
 	cursor: pointer;
 }
 
-.booking-date::-webkit-input-placeholder {
+.hotel-search-form input::-webkit-input-placeholder {
 	color: #000000;
 	opacity: 1;
 }
 
-.booking-date::-moz-placeholder {
+.hotel-search-form input::-moz-placeholder {
 	color: #000000;
 	opacity: 1;
 }
 
-.booking-date:-ms-input-placeholder {
+.hotel-search-form input:-ms-input-placeholder {
 	color: #000000;
 	opacity: 1;
 }
 
-.booking-date::placeholder {
+.hotel-search-form input::placeholder {
 	color: #000000;
 	opacity: 1;
 }
@@ -960,7 +964,7 @@ img {
 }
 
 .children-number label {
-	width: 102px;
+	width: 66px;
 	margin: 0;
 }
 
@@ -971,8 +975,9 @@ img {
 
 .minus-btn,
 .plus-btn {
+	float: left;
 	margin: 0;
-	padding: 7px 15px;
+	padding: 7px 14px;
 	font-weight: 700;
 	font-size: 21px;
 	color: #a9a9a9;

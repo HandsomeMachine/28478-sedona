@@ -102,6 +102,33 @@
 						<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					</div>
 					<a class="btn search-form-btn" href="#">Поиск гостиницы в Седоне</a>
+					<div class="modal-content"> <!--Чтобы скрыть эту форму, нужно добавить класс .modal-content-close-->
+					<form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
+					<div class="booking-date clearfix">
+						<label for="arrival-date">Дата заезда:</label>
+						<input type="text" name="arrival-date" value="" id="arrival-date" placeholder="24 АПРЕЛЯ 2016">
+						<button class="calendar-icon" type="button" title="Открыть календарь"></button>
+					</div>
+					<div class="booking-date clearfix">
+						<label for="departure-date">Дата Выезда:</label>
+						<input type="text" name="departure-date" value="" id="departure-date" placeholder="4 ИЮЛЯ 2016">
+						<button class="calendar-icon" type="button" title="Открыть календарь"></button>
+					</div>
+					<div class="booking-person adult-number">
+						<label for="adults-number">Взрослые:</label>
+						<button class="minus-btn" type="button">-</button>
+						<input type="text" name="adults-number" value="" id="adults-number" placeholder="2">
+						<button class="plus-btn" type="button">+</button>
+					</div>
+					<div class="booking-person children-number">
+						<label for="children-number">Дети:</label>
+						<button class="minus-btn" type="button">-</button>
+						<input type="text" name="children-number" value="" id="children-number" placeholder="0">
+						<button class="plus-btn" type="button">+</button>
+					</div>
+					<button class="hotel-search-btn" type="submit" title="Найти гостиницу">Найти</button>
+					</form>
+				</div>
 				</div>
 				<div class="index-map">
 				</div>
@@ -120,33 +147,6 @@
 					</a>
 				</div>
 			</footer>
-		</div>
-		<div class="modal-content"> <!--Чтобы скрыть эту форму, нужно добавить класс .modal-content-close-->
-			<form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
-				<div class="booking-date clearfix">
-					<label for="arrival-date">Дата заезда:</label>
-					<input type="text" name="arrival-date" value="" id="arrival-date" placeholder="24 АПРЕЛЯ 2016">
-					<button class="calendar-icon" type="button" title="Открыть календарь"></button>
-				</div>
-				<div class="booking-date clearfix">
-					<label for="departure-date">Дата Выезда:</label>
-					<input type="text" name="departure-date" value="" id="departure-date" placeholder="4 ИЮЛЯ 2016">
-					<button class="calendar-icon" type="button" title="Открыть календарь"></button>
-				</div>
-				<div class="booking-person adult-number">
-					<label for="adults-number">Взрослые:</label>
-					<button class="minus-btn" type="button">-</button>
-					<input type="text" name="adults-number" value="" id="adults-number" placeholder="2">
-					<button class="plus-btn" type="button">+</button>
-				</div>
-				<div class="booking-person children-number">
-					<label for="children-number">Дети:</label>
-					<button class="minus-btn" type="button">-</button>
-					<input type="text" name="children-number" value="" id="children-number" placeholder="0">
-					<button class="plus-btn" type="button">+</button>
-				</div>
-				<button class="hotel-search-btn" type="submit" title="Найти гостиницу">Найти</button>
-			</form>
 		</div>
 	</body>
 </html>

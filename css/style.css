@@ -439,6 +439,7 @@ img {
 	margin: 0;
 	color: inherit;
 	font: inherit;
+	line-height: 30px;
 	background: none;
 	border: none;
 }
@@ -624,7 +625,6 @@ img {
 
 .sort-result-row .hotel-description {
 	float: left;
-	width: 264px;
 }
 
 .sort-result-row .hotel-rate {
@@ -639,17 +639,25 @@ img {
 	line-height: 26px;
 }
 
-.hotel-description .hotel-title:hover {
+.hotel-title a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.hotel-title a:hover {
 	color: #81b3d2;
 }
 
-.hotel-description .hotel-title:active {
+.hotel-title a:active {
 	color: #cacaca;
 }
 
 .hotel-info,
 .book-block {
 	float: left;
+}
+
+.hotel-info {
 	margin-right: 6px;
 }
 
@@ -669,7 +677,6 @@ img {
 }
 
 .more-info-btn {
-	width: 74px;
 	padding: 3px 17px;
 	background-color: #81b3d2;
 }
@@ -684,7 +691,6 @@ img {
 }
 
 .book-btn {
-	width: 106px;
 	padding: 3px 19px;
 	background-color: #766357;
 }
@@ -720,7 +726,6 @@ img {
 
 .hotel-rate-number {
 	float: right;
-	width: 90px;
 	padding: 3px 10px;
 	text-align: center;
 	background-color: #f2f2f2;
@@ -877,6 +882,26 @@ img {
 	cursor: pointer;
 }
 
+.hotel-search-form::-webkit-input-placeholder {
+	color: #000000;
+	opacity: 1;
+}
+
+.hotel-search-form::-moz-placeholder {
+	color: #000000;
+	opacity: 1;
+}
+
+.hotel-search-form:-ms-input-placeholder {
+	color: #000000;
+	opacity: 1;
+}
+
+.hotel-search-form::placeholder {
+	color: #000000;
+	opacity: 1;
+}
+
 .booking-date {
 	position: relative;
 	width: 458px;
@@ -964,26 +989,6 @@ img {
 .minus-btn:active,
 .plus-btn:active {
 	color: #81b3d2;
-}
-
-.adult-number .minus-btn {
-	position: absolute;
-	left: 166px;
-}
-
-.adult-number .plus-btn {
-	position: absolute;
-	left: 241px;
-}
-
-.children-number .minus-btn {
-	position: absolute;
-	right: 135px;
-}
-
-.children-number .plus-btn {
-	position: absolute;
-	right: 55px;
 }
 
 .hotel-search-btn {

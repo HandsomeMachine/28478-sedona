@@ -14,6 +14,15 @@ hotelSearch.addEventListener("click", function(event) {
 	popup.classList.toggle("modal-content-close");
 });
 
+formSubmit.addEventListener("submit", function(event) {
+	if (!arrival.value || !departure.value || !adults.value || !children.value) {
+	event.preventDefault();
+	popup.classList.remove("modal-content-error");
+	popup.offsetWidth = popup.offsetWidth;
+	popup.classList.add("modal-content-error");
+	}
+});
+
 window.addEventListener("keydown", function(event) {
 	if (event.keyCode === 27) {
 		if (!popup.classList.contains("modal-content-close")) {

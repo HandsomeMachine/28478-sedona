@@ -1059,10 +1059,19 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 }
 
 .adult-number {
+	position: relative;
 	margin-right: 52px;
 }
 
+.adult-number input,
+.children-number input {
+	width: 40px;
+	margin: 0;
+	padding: 1px 38px;
+}
+
 .children-number {
+	position: relative;
 	float: left;
 	width: 180px;
 }
@@ -1072,40 +1081,56 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 	margin: 0;
 }
 
-.children-number input {
-	width: 38px;
-	margin: 0;
-}
-
 .minus-btn,
 .plus-btn {
-	float: left;
+	position: absolute;
 	margin: 0;
-	padding: 7px 14px;
 	font-weight: 700;
 	font-size: 21px;
 	color: #a9a9a9;
-	background-color: #f2f2f2;
+	background-color: transparent;
 	border: none;
 	cursor: pointer;
+}
+
+.minus-btn {
+	padding: 7px 14px;
+}
+
+.plus-btn {
+	padding: 7px 13px;
+}
+
+.adult-number .minus-btn {
+	left: 110px;
+}
+
+.adult-number .plus-btn {
+	left: 188px;
+}
+
+.children-number .minus-btn {
+	right: 81px;
+}
+
+.children-number .plus-btn {
+	right: 0px;
 }
 
 .minus-btn:hover,
 .plus-btn:hover {
 	color: #000000;
-	background-color: #ebebeb;
 }
 
 .minus-btn:active,
 .plus-btn:active {
 	color: #81b3d2;
-	background-color: #ffffff;
 	outline: none;
 }
 
 .minus-btn:focus,
 .plus-btn:focus {
-	outline: 2px solid #e5e5e5;
+	outline: none;
 }
 
 .hotel-search-btn {

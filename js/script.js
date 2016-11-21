@@ -14,22 +14,9 @@ hotelSearch.addEventListener("click", function(event) {
 	popup.classList.toggle("modal-content-close");
 });
 
-formSubmit.addEventListener("submit", function(event) {
-	if (!arrival.value || !departure.value || !adults.value || !children.value) {
-	event.preventDefault();
-	popup.classList.remove("modal-content-error");
-	popup.offsetWidth = popup.offsetWidth;
-	popup.classList.add("modal-content-error");
-	} else {
-		localStorage.setItem("adults", adults.value);
-		localStorage.setItem("children", children.value);
-		popup.classList.remove("modal-content-error");
-	}
-});
-
 window.addEventListener("keydown", function(event) {
 	if (event.keyCode === 27) {
-		if (popup.classList.contains(!"modal-content-close")) {
+		if (!popup.classList.contains("modal-content-close")) {
 			popup.classList.add("modal-content-close");
 			popup.classList.remove("modal-content-error");
 		}

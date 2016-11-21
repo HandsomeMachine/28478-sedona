@@ -496,6 +496,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;
+	text-decoration: none;
 	text-transform: uppercase;
 	background: transparent;
 	border: 2px solid #ffffff;

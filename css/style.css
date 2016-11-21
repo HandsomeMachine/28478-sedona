@@ -274,6 +274,10 @@ img {
 	background-color: #766357;
 }
 
+.index-map {
+	background: #cbdda9 url("..img/main/map.jpg");
+	background-size: 1200px 594px;
+}
 
 /*inner-page*/
 

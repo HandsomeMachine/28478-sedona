@@ -7,8 +7,6 @@ var departure = formSubmit.querySelector("[name=departure-date]");
 var adults = formSubmit.querySelector("[name=adults-number]");
 var children = formSubmit.querySelector("[name=children-number]");
 
-var storage = localStorage.getItem("adults");
-
 hotelSearch.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.toggle("modal-content-close");

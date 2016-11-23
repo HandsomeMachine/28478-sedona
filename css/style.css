@@ -171,6 +171,7 @@ img {
 .reason-text h2 {
 	margin-top: 48px;
 	margin-bottom: 25px;
+	padding: 0 120px;
 	font-size: 21px;
 	line-height: 21px;
 }
@@ -178,6 +179,8 @@ img {
 .reason-best h2 {
 	margin-top: 55px;
 	margin-bottom: 25px;
+	padding: 0 125px;
+	padding-right: 124px;
 	font-size: 21px;
 	line-height: 21px;
 }
@@ -279,6 +282,12 @@ img {
 	background-size: 1200px 594px;
 }
 
+.index-map iframe {
+	width: 100%;
+	height: 594px;
+	border: none;
+}
+
 /*inner-page*/
 
 
@@ -357,6 +366,10 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 	opacity: 1;
 }
 
+input[type="checkbox"]:disabled + .checkbox-indicator {
+	opacity: 0.5;
+}
+
 input[type="checkbox"]:checked + .checkbox-indicator::before {
 	content: "";
 	position: absolute;
@@ -387,6 +400,11 @@ input[type="checkbox"]:checked + .checkbox-indicator::before {
 input[type="checkbox"]:checked + .checkbox-indicator::after {
 	-webkit-transform: rotate(45deg);
 			transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked + .checkbox-indicator::before:disabled,
+input[type="checkbox"]:checked + .checkbox-indicator::after:disabled {
+	opacity: 0.5;
 }
 
 .cost-range {
@@ -547,6 +565,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 
 .sort-type {
 	float: left;
+	width: 500px;
 	margin-top: 9px;
 	font-size: 12px;
 	line-height: 18px;
@@ -639,6 +658,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 
 .sort-result-row .hotel-description {
 	float: left;
+	width: 320px;
 }
 
 .sort-result-row .hotel-rate {
@@ -648,6 +668,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 }
 
 .hotel-description .hotel-title {
+	width: 262px;
 	margin-top: -5px;
 	margin-bottom: 7px;
 	line-height: 26px;
@@ -762,7 +783,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 .main-footer .hashtag {
 	float: left;
 	width: 405px;
-	padding: 48px 0;
+	padding: 50px 0;
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
@@ -784,7 +805,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
 	height: 48px;
 	margin-right: 6px;
 	text-decoration: none;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 .social-button-tw {
